@@ -5,28 +5,35 @@ import { Row, Col, Table } from "reactstrap";
 
 
 
-export default class StudentRegister extends React.Component{
-    constructor(){
+export default class StudentRegister extends React.Component {
+    constructor() {
         super();
-        this.state={
+        this.state = {
 
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <>
-            <div className= 'content'>
-            <Row>
-                <Col>
-                     <Table>
-                         <thead>
-                             <tr>
-                             <th>ROLL NUMBER</th>
-                             <th>NAME</th>
-                             <th>CGPA</th>
-                             </tr>
-                             </thead>
-                             <tbody>
+                <div className='content'>
+                    <Row>
+                        <Col className='text-center text-info'>
+                            <strong style={{ fontSize: '25px' }}>Student Register</strong>
+                        </Col>
+                    </Row>
+                    <hr />
+                    <br />
+                    <Row>
+                        <Col>
+                            <Table bordered>
+                                <thead>
+                                    <tr>
+                                        <th>ROLL NUMBER</th>
+                                        <th>NAME</th>
+                                        <th>CGPA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                                     <tr>
                                         <td>{"410815105001"}</td>
                                         <td>{"ANBU S"}</td>
@@ -57,7 +64,7 @@ export default class StudentRegister extends React.Component{
                                         <td>{"JEEVA S"}</td>
                                         <td>{"58 %"}</td>
                                     </tr>
-                                   <tr>
+                                    <tr>
                                         <td>{"410815105007"}</td>
                                         <td>{"KABILESH K"}</td>
                                         <td>{"43 %"}</td>
@@ -72,7 +79,7 @@ export default class StudentRegister extends React.Component{
                                         <td>{"KANDASAMY R"}</td>
                                         <td>{"83 %"}</td>
                                     </tr>
-                                   <tr>
+                                    <tr>
                                         <td>{"410815105010"}</td>
                                         <td>{"NIRANJAN E"}</td>
                                         <td>{"49 %"}</td>
@@ -87,7 +94,7 @@ export default class StudentRegister extends React.Component{
                                         <td>{"PRABAKARAN R"}</td>
                                         <td>{"74 %"}</td>
                                     </tr>
-                                   <tr>
+                                    <tr>
                                         <td>{"410815105013"}</td>
                                         <td>{"PRAVEEN J"}</td>
                                         <td>{"55 %"}</td>
@@ -117,7 +124,7 @@ export default class StudentRegister extends React.Component{
                                         <td>{"SRI VISHNU V"}</td>
                                         <td>{"80 %"}</td>
                                     </tr>
-                                   <tr>
+                                    <tr>
                                         <td>{"410815105019"}</td>
                                         <td>{"SULAIMAN R"}</td>
                                         <td>{"71 %"}</td>
@@ -127,12 +134,12 @@ export default class StudentRegister extends React.Component{
                                         <td>{"VAFI M"}</td>
                                         <td>{"98 %"}</td>
                                     </tr>
-                               </tbody>
-                                </Table>
-                             </Col>
-                             </Row>
+                                </tbody>
+                            </Table>
+                        </Col>
+                    </Row>
 
-            </div>
+                </div>
             </>
         )
     }

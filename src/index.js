@@ -30,6 +30,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import ThemeContextWrapper from "./components/ThemeWrapper/ThemeWrapper";
 import BackgroundColorWrapper from "./components/BackgroundColorWrapper/BackgroundColorWrapper";
 
+
+document.body.classList.add("white-content");
 ReactDOM.render(
   <ThemeContextWrapper>
     <BackgroundColorWrapper>
@@ -37,7 +39,7 @@ ReactDOM.render(
         <Switch>
           <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
           <Route path="/rtl" render={(props) => <RTLLayout {...props} />} />
-          <Redirect from="/" to="/admin/dashboard" />
+          <Redirect from="/" to="/admin/studentregister" />
         </Switch>
       </BrowserRouter>
     </BackgroundColorWrapper>
