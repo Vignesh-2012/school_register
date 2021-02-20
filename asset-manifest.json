@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/school_register/static/css/main.0bd73c8d.chunk.css",
+    "main.js": "/school_register/static/js/main.3a93a015.chunk.js",
+    "main.js.map": "/school_register/static/js/main.3a93a015.chunk.js.map",
+    "runtime-main.js": "/school_register/static/js/runtime-main.4af6319a.js",
+    "runtime-main.js.map": "/school_register/static/js/runtime-main.4af6319a.js.map",
+    "static/css/2.c63ab1cf.chunk.css": "/school_register/static/css/2.c63ab1cf.chunk.css",
+    "static/js/2.b21f2730.chunk.js": "/school_register/static/js/2.b21f2730.chunk.js",
+    "static/js/2.b21f2730.chunk.js.map": "/school_register/static/js/2.b21f2730.chunk.js.map",
+    "index.html": "/school_register/index.html",
+    "static/css/2.c63ab1cf.chunk.css.map": "/school_register/static/css/2.c63ab1cf.chunk.css.map",
+    "static/css/main.0bd73c8d.chunk.css.map": "/school_register/static/css/main.0bd73c8d.chunk.css.map",
+    "static/js/2.b21f2730.chunk.js.LICENSE.txt": "/school_register/static/js/2.b21f2730.chunk.js.LICENSE.txt",
+    "static/js/main.3a93a015.chunk.js.LICENSE.txt": "/school_register/static/js/main.3a93a015.chunk.js.LICENSE.txt",
+    "static/media/anime3.png": "/school_register/static/media/anime3.4438e506.png",
+    "static/media/emilyz.jpg": "/school_register/static/media/emilyz.105ff23d.jpg",
+    "static/media/all.min.css": "/school_register/static/media/fa-solid-900.46fdbd2d.woff",
+    "static/media/nucleo-icons.css": "/school_register/static/media/nucleo.bd5cce8b.eot",
+    "static/media/react-logo.561f1671.png": "/school_register/static/media/react-logo.561f1671.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4af6319a.js",
+    "static/css/2.c63ab1cf.chunk.css",
+    "static/js/2.b21f2730.chunk.js",
+    "static/css/main.0bd73c8d.chunk.css",
+    "static/js/main.3a93a015.chunk.js"
+  ]
+}
