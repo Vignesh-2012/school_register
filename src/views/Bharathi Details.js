@@ -109,8 +109,8 @@ export default class BharathiDetails extends React.Component {
               pointBorderWidth: 20,
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
-              pointRadius: 4,
-              data: [this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100)],
+              pointRadius: 4, 10
+              data: [this.randomIntFromInterval(20,0), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100), this.randomIntFromInterval(20, 100)],
             },
           ],
         };
