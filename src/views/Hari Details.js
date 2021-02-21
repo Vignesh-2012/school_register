@@ -175,7 +175,8 @@ export default class HariDetails extends React.Component{
                 <img
                       alt="..."
                       className="avatar"
-                      src={require("assets/img/emilyz.jpg").default}
+                      style={{ width: '50%', height: '50%' }}
+                      src={require("assets/img/anime3.png").default}
                     />
                 </Col>
             </Row>
@@ -190,7 +191,7 @@ export default class HariDetails extends React.Component{
                                             <Col>
                                             
                                             <CardTitle>
-                                            <>Hari acadamic scores</>
+                                            <strong style={{color:'#a52a2a'}}>Hari acadamic scores</strong>
                                            </CardTitle>
                                             
                                     </Col>

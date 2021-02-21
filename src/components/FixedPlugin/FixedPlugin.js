@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Black Dashboard React v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -86,7 +70,7 @@ function FixedPlugin(props) {
           </li>
           <li className="button-container">
             <Button
-              href="https://www.creative-tim.com/product/black-dashboard-react"
+              href="http://Vignesh-2012.github.io/school_register"
               color="primary"
               block
               className="btn-round"
@@ -98,7 +82,7 @@ function FixedPlugin(props) {
               block
               className="btn-round"
               outline
-              href="https://demos.creative-tim.com/black-dashboard-react/#/documentation/tutorial"
+              href="http://Vignesh-2012.github.io/school_register"
             >
               Documentation
             </Button>
