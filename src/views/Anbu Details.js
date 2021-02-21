@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { Row, Col, Card, CardHeader, CardTitle, CardBody, } from "reactstrap";
-
+import Select from "react-select"
 
 
 
@@ -11,9 +11,32 @@ export default class AnbuDetails extends React.Component {
   constructor() {
     super();
     this.state = {
+      selected_subject: {
+        value: '1',
+        label: 'PHYSICS'
+      },
+      subject_options: [
+        {
+          value: '1',
+          label: 'PHYSICS'
+        }, {
+          value: '2',
+          label: 'CHEMISTRY'
+        }, {
+          value: '3',
+          label: 'MATHS'
+        }
+      ]
 
     }
+
+    
   }
+
+  randomIntFromInterval = (min, max) => { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   render() {
     let chart1_2_options = {
       maintainAspectRatio: false,
@@ -93,7 +116,7 @@ export default class AnbuDetails extends React.Component {
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
               pointRadius: 4,
-              data: [91, 76, 54, 84, 45, 82, 64, 68, 93, 56, 53],
+              data: [this.randomIntFromInterval(35,90),this.randomIntFromInterval(45,90),this.randomIntFromInterval(75,90),this.randomIntFromInterval(65,80),this.randomIntFromInterval(50,95),this.randomIntFromInterval(50,95),this.randomIntFromInterval(65,95),this.randomIntFromInterval(65,90),this.randomIntFromInterval(45,80),this.randomIntFromInterval(50,95),this.randomIntFromInterval(50,95)],
             },
           ],
         };
@@ -193,14 +216,30 @@ export default class AnbuDetails extends React.Component {
               <Card>
                 <CardHeader>
                   <Row>
-                    <Col>
+                    <Col md='9'>
 
                       <CardTitle>
                         <strong style={{color:'#ff0000'}}>Anbu acadamic scores</strong>
                       </CardTitle>
+                      </Col>
+                      <Col >
+                      <Select
+                        className="react-select info"
+                        classNamePrefix="react-select"
+                        name="subject_select"
+                        value={this.state.selected_subject}
+                        onChange={event => {
+                          this.setState({
+                            selected_subject: event,
+                          })
+                        }}
+                        options={this.state.subject_options}
+                      >
 
+                      </Select>
                     </Col>
-                  </Row>
+
+                         </Row>
 
                 </CardHeader>
                 <CardBody>

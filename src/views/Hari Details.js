@@ -1,15 +1,38 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { Row,Col, Card, CardHeader, CardTitle, CardBody,} from "reactstrap";
-
+import Select from "react-select"
 
 export default class HariDetails extends React.Component{
     constructor(){
         super();
         this.state={
-
+          selected_subject: {
+            value: '1',
+            label: 'PHYSICS'
+          },
+          subject_options: [
+            {
+              value: '1',
+              label: 'PHYSICS'
+            }, {
+              value: '2',
+              label: 'CHEMISTRY'
+            }, {
+              value: '3',
+              label: 'MATHS'
+            }
+          ]
+    
         }
-    }
+
+        
+      }
+
+      randomIntFromInterval = (min, max) => { // min and max included 
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+    
     render(){
         let chart1_2_options = {
             maintainAspectRatio: false,
@@ -88,7 +111,7 @@ export default class HariDetails extends React.Component{
                     pointHoverRadius: 4,
                     pointHoverBorderWidth: 15,
                     pointRadius: 4,
-                    data: [67,76,56,45,87,56,94,76,87,65,89],
+                    data: [this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,90),this.randomIntFromInterval(35,96),],
                   },
                 ],
               };
@@ -188,13 +211,29 @@ export default class HariDetails extends React.Component{
                                 <Card>
                                     <CardHeader>
                                         <Row>
-                                            <Col>
+                                            <Col md='9'>
                                             
                                             <CardTitle>
                                             <strong style={{color:'#a52a2a'}}>Hari acadamic scores</strong>
                                            </CardTitle>
                                             
                                     </Col>
+                                    <Col >
+                      <Select
+                        className="react-select info"
+                        classNamePrefix="react-select"
+                        name="subject_select"
+                        value={this.state.selected_subject}
+                        onChange={event => {
+                          this.setState({
+                            selected_subject: event,
+                          })
+                        }}
+                        options={this.state.subject_options}
+                      >
+
+                      </Select>
+                    </Col>
                                         </Row>
 
                                     </CardHeader>

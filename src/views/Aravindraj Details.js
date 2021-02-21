@@ -112,7 +112,7 @@ export default class AravindrajDetails extends React.Component {
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
               pointRadius: 4,
-              data: [this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0)],
+              data: [this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100),this.randomIntFromInterval(40,100)],
             },
           ],
         };
@@ -212,12 +212,28 @@ export default class AravindrajDetails extends React.Component {
               <Card>
                 <CardHeader>
                   <Row>
-                    <Col>
+                    <Col md='9'>
 
                       <CardTitle>
                         <strong style={{ color: '#00ff00' }}>Aravindraj acadamic scores</strong>
                       </CardTitle>
 
+                    </Col>
+                    <Col >
+                      <Select
+                        className="react-select info"
+                        classNamePrefix="react-select"
+                        name="subject_select"
+                        value={this.state.selected_subject}
+                        onChange={event => {
+                          this.setState({
+                            selected_subject: event,
+                          })
+                        }}
+                        options={this.state.subject_options}
+                      >
+
+                      </Select>
                     </Col>
                   </Row>
 
