@@ -1,15 +1,38 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { Row, Col, Card, CardHeader, CardTitle, CardBody, } from "reactstrap";
-
+import Select from "react-select"
 
 export default class AravindrajDetails extends React.Component {
   constructor() {
     super();
-    this.state = {
+    this.state =  {
+      selected_subject: {
+        value: '1',
+        label: 'PHYSICS'
+      },
+      subject_options: [
+        {
+          value: '1',
+          label: 'PHYSICS'
+        }, {
+          value: '2',
+          label: 'CHEMISTRY'
+        }, {
+          value: '3',
+          label: 'MATHS'
+        }
+      ]
 
     }
+
+    
   }
+
+  randomIntFromInterval = (min, max) => { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   render() {
     let chart1_2_options = {
       maintainAspectRatio: false,
@@ -89,7 +112,7 @@ export default class AravindrajDetails extends React.Component {
               pointHoverRadius: 4,
               pointHoverBorderWidth: 15,
               pointRadius: 4,
-              data: [76, 90, 45, 55, 73, 64, 83, 65, 87, 88, 94],
+              data: [this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0),this.randomIntFromInterval(20,0)],
             },
           ],
         };
